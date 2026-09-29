@@ -1,0 +1,44 @@
+{
+  "name": "edge",
+  "port": 8080,
+  "entrypoint": "app:app",
+  "ingress": "loopback",
+  "peers": {
+    "accounts": {
+      "url": "http://accounts:8080",
+      "repository": "https://github.com/sainath1204/meridian-accounts"
+    },
+    "catalog": {
+      "url": "http://catalog:8080",
+      "repository": "https://github.com/sainath1204/meridian-catalog"
+    },
+    "query": {
+      "url": "http://query:8080",
+      "repository": "https://github.com/sainath1204/meridian-query"
+    },
+    "assets": {
+      "url": "http://assets:8080",
+      "repository": "https://github.com/sainath1204/meridian-assets"
+    },
+    "bundles": {
+      "url": "http://bundles:8080",
+      "repository": "https://github.com/sainath1204/meridian-bundles"
+    },
+    "connectors": {
+      "url": "http://connectors:8080",
+      "repository": "https://github.com/sainath1204/meridian-connectors"
+    },
+    "navigation": {
+      "url": "http://navigation:8080",
+      "repository": "https://github.com/sainath1204/meridian-navigation"
+    },
+    "render": {
+      "url": "http://render:8080",
+      "repository": "https://github.com/sainath1204/meridian-render"
+    },
+    "workers": {
+      "url": "http://workers:8080",
+      "repository": "https://github.com/sainath1204/meridian-workers"
+    }
+  }
+}
